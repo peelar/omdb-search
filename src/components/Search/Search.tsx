@@ -62,7 +62,11 @@ const Search: React.FC = () => {
         {results?.Search && (
           <Box>
             <Results results={results.Search} />
-            <Pagination total={parseInt(results.totalResults)} />
+            <Pagination
+              page={page}
+              setPage={setPage}
+              total={parseInt(results.totalResults)}
+            />
           </Box>
         )}
       </Box>
