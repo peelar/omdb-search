@@ -1,14 +1,15 @@
+import { AppBar, Container, Toolbar } from "@material-ui/core";
 import Search from "./components/Search/Search";
 
 const App = () => {
   return (
     <>
-      <header>
-        <h1>OMDB Search</h1>
-      </header>
-      <main>
+      <AppBar position="static">
+        <Toolbar>OMDB Search</Toolbar>
+      </AppBar>
+      <Container maxWidth="xl" component="main">
         <Search />
-      </main>
+      </Container>
     </>
   );
 };
