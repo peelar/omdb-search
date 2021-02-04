@@ -11,6 +11,10 @@ const Search: React.FC = () => {
   const isResponseEmpty =
     debouncedValue !== "" && results?.Response === "False";
 
+  const clear = () => {
+    setValue("");
+  };
+
   return (
     <div>
       <form onSubmit={(e) => e.preventDefault()}>
@@ -20,7 +24,9 @@ const Search: React.FC = () => {
           value={value}
           placeholder="Enter text"
         />
-        <button type="submit">Submit</button>
+        <button type="button" onClick={clear}>
+          Clear [X]
+        </button>
       </form>
       {isLoading && <h2>Loading...</h2>}
       {isError && <h2>Woops!</h2>}
