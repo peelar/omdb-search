@@ -17,7 +17,7 @@ const Search: React.FC = () => {
   };
 
   return (
-    <div>
+    <section>
       <form onSubmit={(e) => e.preventDefault()}>
         <input
           type="text"
@@ -38,7 +38,7 @@ const Search: React.FC = () => {
           <Pagination total={parseInt(results.totalResults)} />
         </>
       )}
-    </div>
+    </section>
   );
 };
 
