@@ -9,10 +9,11 @@ type UseSearchValues = {
   isError: AxiosError<any> | undefined;
 };
 
-const useSearch = (phrase: string): UseSearchValues => {
+const useSearch = (phrase: string, page: number): UseSearchValues => {
+  const numPage = page.toString();
   const { data, error } = useSWR<OMDBSearchResponse, AxiosError>(
-    () => `search/${phrase}`,
-    () => fetcher(phrase)
+    () => `search/phrase=${phrase}/page=${page}`,
+    () => fetcher(phrase, numPage)
   );
   return {
     results: data,
