@@ -22,6 +22,7 @@ const Search: React.FC = () => {
 
   const clear = () => {
     setValue("");
+    setPage(1);
   };
 
   return (
