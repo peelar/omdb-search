@@ -14,9 +14,8 @@ import {
 const Search: React.FC = () => {
   const [value, setValue] = useState("");
   const debouncedValue = useDebounce(value, 1000);
-  const { results, isError, isLoading } = useSearch(debouncedValue);
-
   const [page, setPage] = useState(1);
+  const { results, isError, isLoading } = useSearch(debouncedValue, page);
 
   const isResponseEmpty =
     debouncedValue !== "" && results?.Response === "False";
