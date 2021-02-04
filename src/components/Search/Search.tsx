@@ -54,13 +54,24 @@ const Search: React.FC = () => {
         display="flex"
         alignItems="center"
         justifyContent="center"
-        minHeight="20vh"
+        minHeight="40vh"
       >
         {isLoading && <CircularProgress />}
         {isError && <h2>Woops!</h2>}
         {isResponseEmpty && <h2>No data :(</h2>}
         {results?.Search && (
-          <Box>
+          <Box
+            display="flex"
+            alignItems="center"
+            justifyContent="space-around"
+            flexDirection="column"
+            my={2}
+          >
+            <Pagination
+              page={page}
+              setPage={setPage}
+              total={parseInt(results.totalResults)}
+            />
             <Results results={results.Search} />
             <Pagination
               page={page}
