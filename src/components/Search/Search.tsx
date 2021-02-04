@@ -1,12 +1,15 @@
 import { useState } from "react";
+import useDebounce from "../../hooks/useDebounce";
 import useSearch from "../../hooks/useSearch";
 import Results from "../Results/Results";
 
 const Search: React.FC = () => {
   const [value, setValue] = useState("");
-  const { results, isError, isLoading } = useSearch(value);
+  const debouncedValue = useDebounce(value, 1000);
+  const { results, isError, isLoading } = useSearch(debouncedValue);
 
-  const isResponseEmpty = value !== "" && results?.Response === "False";
+  const isResponseEmpty =
+    debouncedValue !== "" && results?.Response === "False";
 
   return (
     <div>
