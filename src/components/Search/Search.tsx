@@ -2,6 +2,7 @@ import { useState } from "react";
 import useDebounce from "../../hooks/useDebounce";
 import useSearch from "../../hooks/useSearch";
 import Results from "../Results/Results";
+import Pagination from "../Pagination/Pagination";
 
 const Search: React.FC = () => {
   const [value, setValue] = useState("");
@@ -31,7 +32,12 @@ const Search: React.FC = () => {
       {isLoading && <h2>Loading...</h2>}
       {isError && <h2>Woops!</h2>}
       {isResponseEmpty && <h2>No data :(</h2>}
-      {results?.Search && <Results results={results.Search} />}
+      {results?.Search && (
+        <>
+          <Results results={results.Search} />
+          <Pagination total={parseInt(results.totalResults)} />
+        </>
+      )}
     </div>
   );
 };
