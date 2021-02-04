@@ -29,7 +29,7 @@ const Search: React.FC = () => {
     <Box component="section" my={2}>
       <form onSubmit={(e) => e.preventDefault()}>
         <Grid container spacing={2}>
-          <Grid item xs={10}>
+          <Grid item xs={12} md={10}>
             <TextField
               type="text"
               onChange={(e) => setValue(e.target.value)}
@@ -38,7 +38,7 @@ const Search: React.FC = () => {
               fullWidth
             />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={4} md={2}>
             <Button
               variant="contained"
               color="primary"
