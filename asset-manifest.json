@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/omdb-search/static/js/main.e7e65ce1.chunk.js",
-    "main.js.map": "/omdb-search/static/js/main.e7e65ce1.chunk.js.map",
-    "runtime-main.js": "/omdb-search/static/js/runtime-main.35108678.js",
-    "runtime-main.js.map": "/omdb-search/static/js/runtime-main.35108678.js.map",
-    "static/js/2.f5a1849a.chunk.js": "/omdb-search/static/js/2.f5a1849a.chunk.js",
-    "static/js/2.f5a1849a.chunk.js.map": "/omdb-search/static/js/2.f5a1849a.chunk.js.map",
-    "static/js/3.405039e3.chunk.js": "/omdb-search/static/js/3.405039e3.chunk.js",
-    "static/js/3.405039e3.chunk.js.map": "/omdb-search/static/js/3.405039e3.chunk.js.map",
+    "main.js": "/omdb-search/static/js/main.3a473de1.chunk.js",
+    "main.js.map": "/omdb-search/static/js/main.3a473de1.chunk.js.map",
+    "runtime-main.js": "/omdb-search/static/js/runtime-main.7ea2fb3c.js",
+    "runtime-main.js.map": "/omdb-search/static/js/runtime-main.7ea2fb3c.js.map",
+    "static/js/2.a55d7378.chunk.js": "/omdb-search/static/js/2.a55d7378.chunk.js",
+    "static/js/2.a55d7378.chunk.js.map": "/omdb-search/static/js/2.a55d7378.chunk.js.map",
+    "static/js/3.951b17c5.chunk.js": "/omdb-search/static/js/3.951b17c5.chunk.js",
+    "static/js/3.951b17c5.chunk.js.map": "/omdb-search/static/js/3.951b17c5.chunk.js.map",
     "index.html": "/omdb-search/index.html",
-    "static/js/2.f5a1849a.chunk.js.LICENSE.txt": "/omdb-search/static/js/2.f5a1849a.chunk.js.LICENSE.txt"
+    "static/js/2.a55d7378.chunk.js.LICENSE.txt": "/omdb-search/static/js/2.a55d7378.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.35108678.js",
-    "static/js/2.f5a1849a.chunk.js",
-    "static/js/main.e7e65ce1.chunk.js"
+    "static/js/runtime-main.7ea2fb3c.js",
+    "static/js/2.a55d7378.chunk.js",
+    "static/js/main.3a473de1.chunk.js"
   ]
 }
