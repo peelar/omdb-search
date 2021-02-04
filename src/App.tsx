@@ -1,9 +1,12 @@
-function App() {
+import Search from "./components/Search/Search";
+
+const App = () => {
   return (
     <div className="App">
-      <h1>All cleaned up</h1>
+      <h1>OMDB Search</h1>
+      <Search />
     </div>
   );
-}
+};
 
 export default App;
