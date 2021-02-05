@@ -28,7 +28,7 @@ const Search: React.FC = () => {
               type="text"
               onChange={(e) => setValue(e.target.value)}
               value={value}
-              placeholder="Enter text"
+              placeholder="Search for a film"
               fullWidth
             />
           </Grid>
