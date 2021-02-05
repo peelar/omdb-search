@@ -1,6 +1,5 @@
 import { useState } from "react";
-import useDebounce from "../../hooks/useDebounce";
-import useSearch from "../../hooks/useSearch";
+import { useDebounce, useSearch } from "../../hooks";
 import Results from "../Results/Results";
 import Pagination from "../Pagination/Pagination";
 import { Button, Grid, TextField, Box } from "@material-ui/core";
