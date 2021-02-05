@@ -3,6 +3,8 @@ import { SearchEntry } from "../../../types";
 import Result from "../Result/Result";
 import SkeletonCard from "../Result/Skeleton";
 
+const SKELETON_CARDS_NUMBER = 5;
+
 const Results: React.FC<{
   results: SearchEntry[] | undefined;
   isLoading: boolean;
@@ -16,7 +18,7 @@ const Results: React.FC<{
           </Grid>
         ))}
       {isLoading &&
-        Array(5)
+        Array(SKELETON_CARDS_NUMBER)
           .fill(0)
           .map((_, index) => (
             <Grid item xs={12} key={`result-${index}`}>
