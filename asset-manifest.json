@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/omdb-search/static/js/main.ee3d065e.chunk.js",
-    "main.js.map": "/omdb-search/static/js/main.ee3d065e.chunk.js.map",
+    "main.js": "/omdb-search/static/js/main.acdc0ee7.chunk.js",
+    "main.js.map": "/omdb-search/static/js/main.acdc0ee7.chunk.js.map",
     "runtime-main.js": "/omdb-search/static/js/runtime-main.1356e921.js",
     "runtime-main.js.map": "/omdb-search/static/js/runtime-main.1356e921.js.map",
     "static/js/2.f3db6919.chunk.js": "/omdb-search/static/js/2.f3db6919.chunk.js",
@@ -14,6 +14,6 @@
   "entrypoints": [
     "static/js/runtime-main.1356e921.js",
     "static/js/2.f3db6919.chunk.js",
-    "static/js/main.ee3d065e.chunk.js"
+    "static/js/main.acdc0ee7.chunk.js"
   ]
 }
