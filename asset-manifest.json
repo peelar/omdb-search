@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/omdb-search/static/js/main.acdc0ee7.chunk.js",
-    "main.js.map": "/omdb-search/static/js/main.acdc0ee7.chunk.js.map",
+    "main.js": "/omdb-search/static/js/main.f8accb14.chunk.js",
+    "main.js.map": "/omdb-search/static/js/main.f8accb14.chunk.js.map",
     "runtime-main.js": "/omdb-search/static/js/runtime-main.1356e921.js",
     "runtime-main.js.map": "/omdb-search/static/js/runtime-main.1356e921.js.map",
-    "static/js/2.f3db6919.chunk.js": "/omdb-search/static/js/2.f3db6919.chunk.js",
-    "static/js/2.f3db6919.chunk.js.map": "/omdb-search/static/js/2.f3db6919.chunk.js.map",
+    "static/js/2.11265ab3.chunk.js": "/omdb-search/static/js/2.11265ab3.chunk.js",
+    "static/js/2.11265ab3.chunk.js.map": "/omdb-search/static/js/2.11265ab3.chunk.js.map",
     "static/js/3.a84d190e.chunk.js": "/omdb-search/static/js/3.a84d190e.chunk.js",
     "static/js/3.a84d190e.chunk.js.map": "/omdb-search/static/js/3.a84d190e.chunk.js.map",
     "index.html": "/omdb-search/index.html",
-    "static/js/2.f3db6919.chunk.js.LICENSE.txt": "/omdb-search/static/js/2.f3db6919.chunk.js.LICENSE.txt"
+    "static/js/2.11265ab3.chunk.js.LICENSE.txt": "/omdb-search/static/js/2.11265ab3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1356e921.js",
-    "static/js/2.f3db6919.chunk.js",
-    "static/js/main.acdc0ee7.chunk.js"
+    "static/js/2.11265ab3.chunk.js",
+    "static/js/main.f8accb14.chunk.js"
   ]
 }
