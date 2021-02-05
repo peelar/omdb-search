@@ -4,7 +4,13 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-const theme = createMuiTheme({});
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#f26a5f",
+    },
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>
