@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useDebounce, useSearch } from "../../hooks";
 import Results from "../Results/Results";
 import Pagination from "../Pagination/Pagination";
-import { Button, Grid, TextField, Box } from "@material-ui/core";
+import { Button, Grid, TextField, Box, Typography } from "@material-ui/core";
 import ErrorBox from "../ErrorBox/ErrorBox";
 
 const Search: React.FC = () => {
@@ -45,13 +45,24 @@ const Search: React.FC = () => {
         </Grid>
       </form>
       {error && <ErrorBox error={error} />}
+      {isResponseEmpty && (
+        <Box
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          minHeight="40vh"
+        >
+          <Typography color="textSecondary" variant="h4" align="center">
+            No results
+          </Typography>
+        </Box>
+      )}
       <Box
         display="flex"
         alignItems="center"
         justifyContent="center"
         minHeight="40vh"
       >
-        {isResponseEmpty && <h2>No data :(</h2>}
         <Box
           display="flex"
           alignItems="center"
