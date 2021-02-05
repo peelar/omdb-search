@@ -4,7 +4,7 @@ const ResultCard: React.FC<{
   media: React.ReactNode;
   content: React.ReactNode;
 }> = ({ media, content }) => (
-  <Card>
+  <Card raised>
     <CardActionArea>
       <Grid container spacing={2}>
         <Grid item xs={12} md={4}>
