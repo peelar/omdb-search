@@ -3,13 +3,7 @@ import useDebounce from "../../hooks/useDebounce";
 import useSearch from "../../hooks/useSearch";
 import Results from "../Results/Results";
 import Pagination from "../Pagination/Pagination";
-import {
-  Button,
-  Grid,
-  TextField,
-  Box,
-  CircularProgress,
-} from "@material-ui/core";
+import { Button, Grid, TextField, Box } from "@material-ui/core";
 
 const Search: React.FC = () => {
   const [value, setValue] = useState("");
@@ -56,30 +50,32 @@ const Search: React.FC = () => {
         justifyContent="center"
         minHeight="40vh"
       >
-        {isLoading && <CircularProgress />}
         {isError && <h2>Woops!</h2>}
         {isResponseEmpty && <h2>No data :(</h2>}
-        {results?.Search && (
-          <Box
-            display="flex"
-            alignItems="center"
-            justifyContent="space-around"
-            flexDirection="column"
-            my={2}
-          >
+        <Box
+          display="flex"
+          alignItems="center"
+          justifyContent="space-around"
+          flexDirection="column"
+          width="100%"
+          my={2}
+        >
+          {results?.Search && (
             <Pagination
               page={page}
               setPage={setPage}
               total={parseInt(results.totalResults)}
             />
-            <Results results={results.Search} />
+          )}
+          <Results results={results?.Search} isLoading={isLoading} />
+          {results?.Search && (
             <Pagination
               page={page}
               setPage={setPage}
               total={parseInt(results.totalResults)}
             />
-          </Box>
-        )}
+          )}
+        </Box>
       </Box>
     </Box>
   );
