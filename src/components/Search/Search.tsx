@@ -4,12 +4,13 @@ import useSearch from "../../hooks/useSearch";
 import Results from "../Results/Results";
 import Pagination from "../Pagination/Pagination";
 import { Button, Grid, TextField, Box } from "@material-ui/core";
+import ErrorBox from "../ErrorBox/ErrorBox";
 
 const Search: React.FC = () => {
   const [value, setValue] = useState("");
   const debouncedValue = useDebounce(value, 1000);
   const [page, setPage] = useState(1);
-  const { results, isError, isLoading } = useSearch(debouncedValue, page);
+  const { results, error, isLoading } = useSearch(debouncedValue, page);
 
   const isResponseEmpty =
     debouncedValue !== "" && results?.Response === "False";
@@ -44,13 +45,13 @@ const Search: React.FC = () => {
           </Grid>
         </Grid>
       </form>
+      {error && <ErrorBox error={error} />}
       <Box
         display="flex"
         alignItems="center"
         justifyContent="center"
         minHeight="40vh"
       >
-        {isError && <h2>Woops!</h2>}
         {isResponseEmpty && <h2>No data :(</h2>}
         <Box
           display="flex"

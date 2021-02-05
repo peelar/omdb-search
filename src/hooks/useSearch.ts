@@ -6,7 +6,7 @@ import { AxiosError } from "axios";
 type UseSearchValues = {
   results: OMDBSearchResponse | undefined;
   isLoading: boolean;
-  isError: AxiosError<any> | undefined;
+  error: AxiosError<any> | undefined;
 };
 
 const useSearch = (phrase: string, page: number): UseSearchValues => {
@@ -18,7 +18,7 @@ const useSearch = (phrase: string, page: number): UseSearchValues => {
   return {
     results: data,
     isLoading: !error && !data,
-    isError: error,
+    error,
   };
 };
 
