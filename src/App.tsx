@@ -1,7 +1,7 @@
 import { AppBar, Container, Toolbar } from "@material-ui/core";
 import Search from "./components/Search/Search";
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <>
       <AppBar position="static">
